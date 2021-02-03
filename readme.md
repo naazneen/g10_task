@@ -1,3 +1,16 @@
+# To run: 
+Go to project directory
+```terminal
+python manage.py runserver
+```
+
+# To test:
+Go to project directory
+```terminal
+python manage.py test
+```
+Only tested user creation
+
 ## Register:<br />
 URL: http://127.0.0.1:8000/api_app/users/ (POST)  <br />
 **POST Body**:  <br />
