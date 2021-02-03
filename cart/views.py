@@ -78,12 +78,12 @@ def MyCartView(request):
 def UpdateCartProduct(request,pid):
     try:
         if request.method == 'GET':
-            p_in_c = get_object_or_404(ProductsinCart, product_fromvendor=pid)
+            p_in_c = get_object_or_404(ProductsinCart, product=pid)
             this_data = ProductsinCartSerializer(p_in_c,context={'request': request}).data
             return Response(this_data, status=status.HTTP_200_OK)
 
         elif request.method == 'PATCH':
-            p_in_c = get_object_or_404(ProductsinCart, product_fromvendor=pid)
+            p_in_c = get_object_or_404(ProductsinCart, product=pid)
             serializer = ProductsinCartSerializer(p_in_c,context={'request': request}, data=request.data, partial=True)
             if serializer.is_valid():
                 serializer.save()
@@ -91,7 +91,7 @@ def UpdateCartProduct(request,pid):
             return Response(serializer.errors)
 
         elif request.method == 'DELETE':
-            p_in_c = get_object_or_404(ProductsinCart, product_fromvendor=pid)
+            p_in_c = get_object_or_404(ProductsinCart, product=pid)
             p_in_c.delete()
             return Response("Product Removed from Cart", status=status.HTTP_200_OK)
 
