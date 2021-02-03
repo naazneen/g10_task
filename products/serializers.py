@@ -17,7 +17,7 @@ class CategoryFormSerializer(serializers.ModelSerializer):
 
 class BrandFormSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Category
+        model = Brand
         fields = ('__all__')
         depth = 1
 
