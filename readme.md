@@ -42,28 +42,28 @@
    "category_name": "my category"<br />  
 }<br />   
    
-7.	Customer Cart : http://127.0.0.1:8000/api_app/cart/mycart/ (GET / POST)  
-**POST Body**: (creates a cart)   
-{}   
-**POST / GET Header**:  
-Authorization: “token 16e46d02a74cebf37eb4067a4b79c79ccc9a677a” (Customer token)  
+7.	Customer Cart : http://127.0.0.1:8000/api_app/cart/mycart/ (GET / POST)  <br /> 
+**POST Body**: (creates a cart)  <br />  
+{}   <br /> 
+**POST / GET Header**:  <br /> 
+Authorization: “token 16e46d02a74cebf37eb4067a4b79c79ccc9a677a” (Customer token)  <br /> 
   
-8.	Products in Cart :  http://127.0.0.1:8000/api_app/cart/products-in-cart/ (GET / POST)   
-**POST Body**:   
-{  
-"product":"myna66709028169" (product id)  
-"at_price":"800"  
-}  
+8.	Products in Cart :  http://127.0.0.1:8000/api_app/cart/products-in-cart/ (GET / POST)   <br /> 
+**POST Body**:   <br /> 
+{  <br /> 
+"product":"myna66709028169" (product id)  <br /> 
+"at_price":"800"  <br /> 
+}  <br /> 
   
-**POST/GET Header**:
-Authorization: “token 16e46d02a74cebf37eb4067a4b79c79ccc9a677a”   
+**POST/GET Header**:<br /> 
+Authorization: “token 16e46d02a74cebf37eb4067a4b79c79ccc9a677a”  <br />  
 
-9. Update Products in Cart:  http://127.0.0.1:8000/api_app/cart/update-cart-product/(product_id) (PATCH / GET /  DELETE)   
+9. Update Products in Cart:  http://127.0.0.1:8000/api_app/cart/update-cart-product/(product_id) (PATCH / GET /  DELETE)   <br /> 
 
-**PATCH Body**:   
-{  
-    "quantity": 3  
-}  
+**PATCH Body**:   <br /> 
+{  <br /> 
+    "quantity": 3  <br /> 
+}  <br /> 
     
-**PATCH / GET / DELETE Header**:   
-Authorization: “token 16e46d02a74cebf37eb4067a4b79c79ccc9a677a”   
+**PATCH / GET / DELETE Header**:   <br /> 
+Authorization: “token 16e46d02a74cebf37eb4067a4b79c79ccc9a677a”   <br /> 
