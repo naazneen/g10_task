@@ -1,3 +1,22 @@
+## Register:<br />
+URL: http://127.0.0.1:8000/api_app/users/ (POST)  <br />
+**POST Body**:  <br />
+ {  <br />
+        "email": "users@user.com",  <br />
+        "username": "iamuser", <br />
+         "password": "somepass" <br />
+} <br />
+(registers and creates token)
+
+## Login:<br />
+URL: http://127.0.0.1:8000/api_app/login/ (POST)  <br />
+**POST Body**:  <br />
+ {  <br />
+        "email": "users@user.com", (optional) <br />
+        "username": "iamuser", <br />
+         "password": "somepass" <br />
+} <br />
+(This gives the token)
 
 ## Products:<br /> Only Admin
 
@@ -76,3 +95,12 @@ Authorization: “token 16e46d02a74cebf37eb4067a4b79c79ccc9a677a” <br />
     
 **PATCH / GET / DELETE Header**:<br /> 
 Authorization: “token 16e46d02a74cebf37eb4067a4b79c79ccc9a677a”<br /> 
+
+
+### Note:
+The Bonus section of the pre-work is implemented in the products app.
+When Product is created with a Brand that is not present, it gets created at the same time.
+Same for the Category in Product.
+
+Thanks for having me do this work.
+--- Naazneen Jatu
