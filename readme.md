@@ -62,10 +62,10 @@ Authorization: “token 16e46d02a74cebf37eb4067a4b79c79ccc9a677a” (Customer to
 {<br /> 
 "product":"1", (product id)<br /> 
 "at_price":"800"<br /> 
-}<br /> 
-  
+}<br />
+
 **POST/GET Header**:<br /> 
-Authorization: “token 16e46d02a74cebf37eb4067a4b79c79ccc9a677a”  <br />  
+Authorization: “token 16e46d02a74cebf37eb4067a4b79c79ccc9a677a” <br />  
 
 9. Update Products in Cart:  http://127.0.0.1:8000/api_app/cart/update-cart-product/(product_id) (PATCH / GET /  DELETE)<br /> 
 
